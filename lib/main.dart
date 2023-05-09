@@ -138,7 +138,8 @@ class _CalculatorAppState extends State<CalculatorApp> {
             children: [
               button(
                   text: "%", buttonBgColor: operatorColor, tColor: orangeColor),
-              button(text: "0"),
+              button(text: '0'),
+            
               button(text: "."),
               button(text: "=", buttonBgColor: orangeColor),
             ],
@@ -156,7 +157,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
-                    padding: const EdgeInsets.all(22),
+                    padding: EdgeInsets.all(22),
                     primary: buttonBgColor),
                 onPressed: () => onButtonClick(text),
                 child: Text(
